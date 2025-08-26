@@ -19,51 +19,34 @@ The project covers login, adding products to the cart, performing checkout, veri
 
 ## 📂 Project Structure
 
-ECommerceCartAutomation
+## 📂 Project Structure
 
-src/main/java
-    com.ab.cart.base
-        BaseTest.java
-        DriverFactory.java
-        ExtentManager.java
-        ScreenshotUtils.java
-        TestListener.java
-
-    com.ab.cart.pages
-        BasePage.java
-        CartPage.java
-        CheckoutPage.java
-        HomePage.java
-        LoginPage.java
-
-src/test/java
-    com.ab.cart.tests
-        CartTest.java
-        CheckoutTest.java
-        HomePageTest.java
-        LoginTest.java
-
-reports
-    (Extent report output)
-
-screenshots
-    (Captured screenshots)
-
-test-output
-    (Default TestNG reports)
-
-pom.xml
-    (Maven dependencies & build file)
-
-testng.xml
-    (TestNG suite configuration)
-
-.gitignore
-    → Git ignore file
-
-
- 
-
+- **ECommerceCartAutomation**
+  - **src/main/java**
+    - com.ab.cart.base
+      - BaseTest.java  
+      - DriverFactory.java  
+      - ExtentManager.java  
+      - ScreenshotUtils.java  
+      - TestListener.java  
+    - com.ab.cart.pages
+      - BasePage.java  
+      - CartPage.java  
+      - CheckoutPage.java  
+      - HomePage.java  
+      - LoginPage.java  
+  - **src/test/java**
+    - com.ab.cart.tests
+      - CartTest.java  
+      - CheckoutTest.java  
+      - HomePageTest.java  
+      - LoginTest.java  
+  - **reports** → Extent report output  
+  - **screenshots** → Captured screenshots  
+  - **test-output** → Default TestNG reports  
+  - **pom.xml** → Maven dependencies & build file  
+  - **testng.xml** → TestNG suite configuration  
+  - **.gitignore** → Git ignore file  
 
 
 ---
