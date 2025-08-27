@@ -71,7 +71,7 @@ The project covers login, adding products to the cart, performing checkout, veri
 ## ▶️ How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/ECommerceCartAutomation.git
+   git clone https://github.com/AbarnaSelv/ECommerceCartAutomation.git
    cd ECommerceCartAutomation
 
 2. Run tests with Maven:
