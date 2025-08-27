@@ -15,7 +15,7 @@ public class ExtentManager {
 
 			extent = new ExtentReports();
 			extent.attachReporter(reporter);
-			extent.setSystemInfo("Tester", "Sharfaras");
+			extent.setSystemInfo("Tester", "Abarna");
 			extent.setSystemInfo("Browser", "Chrome");
 		}
 		return extent;

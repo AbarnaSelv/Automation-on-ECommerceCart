@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-26T21:18:41 IST" name="ECommerceCartAutomationSuite" finished-at="2025-08-26T21:19:04 IST" duration-ms="22995">
+  <suite started-at="2025-08-27T11:41:02 IST" name="ECommerceCartAutomationSuite" finished-at="2025-08-27T11:41:37 IST" duration-ms="34563">
     <groups>
     </groups>
-    <test started-at="2025-08-26T21:18:41 IST" name="ECommerceTests" finished-at="2025-08-26T21:19:04 IST" duration-ms="22995">
+    <test started-at="2025-08-27T11:41:02 IST" name="ECommerceTests" finished-at="2025-08-27T11:41:37 IST" duration-ms="34563">
       <class name="com.ab.cart.tests.CheckoutTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ab.cart.tests.CheckoutTest@1e16c0aa]" started-at="2025-08-26T21:18:41 IST" name="setUp" finished-at="2025-08-26T21:18:47 IST" duration-ms="5232" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ab.cart.tests.CheckoutTest@1e16c0aa]" started-at="2025-08-27T11:41:02 IST" name="setUp" finished-at="2025-08-27T11:41:07 IST" duration-ms="5337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CheckoutActions()[pri:0, instance:com.ab.cart.tests.CheckoutTest@1e16c0aa]" started-at="2025-08-26T21:18:47 IST" name="CheckoutActions" finished-at="2025-08-26T21:19:04 IST" duration-ms="17184" status="PASS">
+        <test-method signature="CheckoutActions()[pri:0, instance:com.ab.cart.tests.CheckoutTest@1e16c0aa]" started-at="2025-08-27T11:41:07 IST" name="CheckoutActions" finished-at="2025-08-27T11:41:36 IST" duration-ms="28837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckoutActions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ab.cart.tests.CheckoutTest@1e16c0aa]" started-at="2025-08-26T21:19:04 IST" name="tearDown" finished-at="2025-08-26T21:19:04 IST" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ab.cart.tests.CheckoutTest@1e16c0aa]" started-at="2025-08-27T11:41:36 IST" name="tearDown" finished-at="2025-08-27T11:41:37 IST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
