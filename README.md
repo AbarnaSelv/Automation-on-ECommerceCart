@@ -17,7 +17,6 @@ The project covers login, adding products to the cart, performing checkout, veri
 
 ---
 
-## 📂 Project Structure
 
 ## 📂 Project Structure
 
