@@ -68,6 +68,31 @@ The project covers login, adding products to the cart, performing checkout, veri
 
 ---
 
+## ▶️ 📖 Summary
+
+This project demonstrates a scalable automation testing framework with:
+
+   • Full E-commerce flow coverage (Login → Add to Cart → Checkout → Order Verification → Logout)  
+   • Advanced reporting with ExtentReports + TestNG Reports  
+   • Automatic screenshot capture for better debugging  
+   • Professional coding practices using Page Object Model (POM) and utilities for reusability
+
+--- 
+
+
+## 🎥 Demo Video  
+▶️ [Click here to watch the execution video](https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing )  
+
+
+---
+
+
+## 📸 Execution Screenshots  
+Execution screenshots are included inside the repository under the `Project_Demo/` folder.  
+
+---
+
+
 ## ▶️ How to Run
 1. Clone the repo:
    ```bash
@@ -84,6 +109,9 @@ The project covers login, adding products to the cart, performing checkout, veri
    Extent Report → reports/ExtentReport.html  
    Screenshots → screenshots/
 
+---
+
+
 ## ▶️ Git Setup
 
 This project includes a .gitignore to avoid pushing unnecessary files:
@@ -94,12 +122,5 @@ This project includes a .gitignore to avoid pushing unnecessary files:
    .idea/, .classpath, .project  
    target/
 
-## ▶️ 📖 Summary
 
-This project demonstrates a scalable automation testing framework with:
-
-   • Full E-commerce flow coverage (Login → Add to Cart → Checkout → Order Verification → Logout)  
-   • Advanced reporting with ExtentReports + TestNG Reports  
-   • Automatic screenshot capture for better debugging  
-   • Professional coding practices using Page Object Model (POM) and utilities for reusability
    

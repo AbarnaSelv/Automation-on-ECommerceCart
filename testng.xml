@@ -1,13 +1,12 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ECommerceCartAutomationSuite">
 
     <listeners>
         <listener class-name="com.ab.cart.base.TestListener"/>
     </listeners>
 
-    <test name="ECommerceTests">
+    <test name="EcommerceTests">
         <classes>
-            
             <class name="com.ab.cart.tests.CheckoutTest"/>
         </classes>
     </test>
