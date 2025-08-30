@@ -81,14 +81,14 @@ This project demonstrates a scalable automation testing framework with:
 
 
 ## 🎥 Demo Video  
-▶️ [Click here to watch the execution video](https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing )  
+▶️ [Click here to watch the execution video](https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing)  
 
 
 ---
 
 
 ## 📸 Execution Screenshots  
-Execution screenshots are included inside the repository under the `Project_Demo/` folder.  
+Execution screenshots are included inside the repository under the `ProjectDemo/` folder.  
 
 ---
 
