@@ -1,126 +1,123 @@
-# 🛒 ECommerceCartAutomation
+# ECommerceCartAutomation
 
-**ECommerceCartAutomation** is a Selenium + TestNG based automation framework designed for testing the end-to-end flow of an **E-Commerce web application**.  
-The project covers login, adding products to the cart, performing checkout, verifying order success, and logging out, with integrated **screenshot capture, reporting, and listeners** for detailed execution tracking.
+ECommerceCartAutomation is a Selenium and TestNG based automation framework designed to validate the **end-to-end flow of an E-Commerce web application**.
 
----
-
-## 🚀 Features
-- ✅ Page Object Model (POM) design pattern for clean separation of logic  
-- ✅ TestNG framework for test management  
-- ✅ WebDriverManager for automatic driver handling  
-- ✅ Utility classes for **screenshots** and reusable methods  
-- ✅ TestNG Listeners for logging, reporting, and screenshot capture on pass/failure  
-- ✅ Extent Reports integration for professional HTML reports  
-- ✅ TestNG HTML reports (`test-output`)  
-- ✅ Git-friendly with `.gitignore` included  
+The project covers core user journeys such as **login**, **adding products to cart**, **checkout**, **order verification**, and **logout**.  
+It also includes **automatic screenshot capture**, **listeners**, and **reporting** to track execution details clearly.
 
 ---
 
+## Features
 
-## 📂 Project Structure
+- Page Object Model (POM) design for clean separation of test logic  
+- TestNG framework for structured test execution  
+- WebDriverManager for automatic browser driver handling  
+- Utility classes for screenshots and reusable helper methods  
+- TestNG Listeners for logging, reporting, and screenshot capture on pass and failure  
+- Extent Reports integration for detailed HTML reports  
+- TestNG default HTML reports inside `test-output`  
+- Git-friendly setup with `.gitignore` included  
+
+---
+
+## Project Structure
 
 - **ECommerceCartAutomation**
   - **src/main/java**
-    - com.ab.cart.base
+    - **com.ab.cart.base**
       - BaseTest.java  
       - DriverFactory.java  
       - ExtentManager.java  
       - ScreenshotUtils.java  
       - TestListener.java  
-    - com.ab.cart.pages
+    - **com.ab.cart.pages**
       - BasePage.java  
       - CartPage.java  
       - CheckoutPage.java  
       - HomePage.java  
       - LoginPage.java  
+
   - **src/test/java**
-    - com.ab.cart.tests
+    - **com.ab.cart.tests**
       - CartTest.java  
       - CheckoutTest.java  
       - HomePageTest.java  
       - LoginTest.java  
-  - **reports** → Extent report output  
-  - **screenshots** → Captured screenshots  
-  - **test-output** → Default TestNG reports  
-  - **pom.xml** → Maven dependencies & build file  
-  - **testng.xml** → TestNG suite configuration  
-  - **.gitignore** → Git ignore file  
 
+  - **reports/**  
+    Extent report output  
 
----
+  - **screenshots/**  
+    Captured screenshots  
 
-## 🛠️ Tech Stack
-- **Java 17** (JDK 17)  
-- **Selenium WebDriver**  
-- **TestNG** (7.11.0)  
-- **Maven** (Build & dependency management)  
-- **WebDriverManager** (Driver auto-management)  
-- **ExtentReports** (Advanced HTML reporting)  
-- **Apache Commons IO** (File handling for screenshots)  
+  - **test-output/**  
+    Default TestNG reports  
 
----
+  - **pom.xml**  
+    Maven dependencies and build configuration  
 
-## 📊 Reports & Screenshots
-- **TestNG Reports** → Generated inside `test-output/` (`index.html`, `emailable-report.html`)  
-- **ExtentReports** → Stored inside `reports/` with detailed execution logs  
-- **Screenshots** → Captured automatically for **both passed & failed tests** inside `screenshots/`  
+  - **testng.xml**  
+    TestNG suite configuration  
+
+  - **.gitignore**  
+    Git ignore configuration  
 
 ---
 
-## ▶️ 📖 Summary
+## Tech Stack
 
-This project demonstrates a scalable automation testing framework with:
-
-   • Full E-commerce flow coverage (Login → Add to Cart → Checkout → Order Verification → Logout)  
-   • Advanced reporting with ExtentReports + TestNG Reports  
-   • Automatic screenshot capture for better debugging  
-   • Professional coding practices using Page Object Model (POM) and utilities for reusability
-
---- 
-
-
-## 🎥 Demo Video  
-▶️ [Click here to watch the execution video](https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing)  
-
+- **Java 17 (JDK 17)**
+- **Selenium WebDriver**
+- **TestNG (7.11.0)**
+- **Maven** – build and dependency management  
+- **WebDriverManager** – driver auto-management  
+- **ExtentReports** – advanced HTML reporting  
+- **Apache Commons IO** – file handling for screenshots  
 
 ---
 
+## Reports & Screenshots
 
-## 📸 Execution Screenshots  
-Execution screenshots are included inside the repository under the `ProjectDemo/` folder.  
+- **TestNG Reports**  
+  Generated inside `test-output/`  
+  Includes `index.html` and `emailable-report.html`
 
----
+- **Extent Reports**  
+  Stored inside `reports/` with detailed execution logs
 
-
-## ▶️ How to Run
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/AbarnaSelv/ECommerceCartAutomation.git
-   cd ECommerceCartAutomation
-
-2. Run tests with Maven:
-
-   mvn clean test
-
-3. View reports:
-
-   TestNG default report → test-output/index.html  
-   Extent Report → reports/ExtentReport.html  
-   Screenshots → screenshots/
+- **Screenshots**  
+  Automatically captured for both **passed and failed tests**  
+  Stored inside `screenshots/`
 
 ---
 
+## Summary
 
-## ▶️ Git Setup
+This project demonstrates a **scalable and maintainable automation framework** with:
 
-This project includes a .gitignore to avoid pushing unnecessary files:
+- Complete E-commerce flow coverage  
+  (Login → Add to Cart → Checkout → Order Verification → Logout)
+- Advanced reporting using **Extent Reports** and **TestNG reports**
+- Automatic screenshot capture for better debugging
+- Clean and professional coding practices using **Page Object Model (POM)**
 
-   test-output/  
-   reports/  
-   screenshots/  
-   .idea/, .classpath, .project  
-   target/
+---
 
+## Execution Video
 
-   
+[Execution video of the automation run is available here:]
+(https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing)
+
+---
+
+## Execution Screenshots
+
+Execution screenshots are available inside the repository under the **ProjectDemo/** folder.
+
+---
+
+## How to Run
+
+1. Open the project in **IntelliJ IDEA** or **Eclipse**
+2. Open a terminal inside the project folder
+3. Run:
