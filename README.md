@@ -105,8 +105,8 @@ This project demonstrates a **scalable and maintainable automation framework** w
 
 ## Execution Video
 
-[Execution video of the automation run is available here:]
-(https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing)
+Execution video of the automation run is available here:
+[[Click here to watch the execution video]](https://drive.google.com/file/d/1hjDus1EO10qqK1ESgETwhy25kmrsSgeV/view?usp=sharing)
 
 ---
 
