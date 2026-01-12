@@ -1,16 +1,17 @@
 package com.ab.cart.base;
 
+import java.io.File;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.ab.cart.pages.BasePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-import org.openqa.selenium.WebDriver;
-
 public class TestListener implements ITestListener {
+
 	ExtentReports extent = ExtentManager.getInstance();
 	ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
@@ -21,20 +22,26 @@ public class TestListener implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result) {
-		Object testClass = result.getInstance();
-		WebDriver driver = ((BaseTest) testClass).driver;
+	public void onTestSuccess(ITestResult result) {
+		WebDriver driver = ((BaseTest) result.getInstance()).driver;
 
-		ScreenshotUtils.takeScreenshot(driver, result.getName());
-		System.out.println("Screenshot captured for failed test: " + result.getName());
+		String screenshotPath = ScreenshotUtils.takeScreenshot(driver, result.getName());
+
+
+		test.get()
+		.pass("Test Passed")
+		.addScreenCaptureFromPath(new File(screenshotPath).getAbsolutePath());
 	}
 
 	@Override
-	public void onTestSuccess(ITestResult result) {
-		Object testClass = result.getInstance();
-		WebDriver driver = ((BaseTest) testClass).driver;
-		ScreenshotUtils.takeScreenshot(driver, result.getName());
-		System.out.println("Screenshot captured for passed test: " + result.getName());
+	public void onTestFailure(ITestResult result) {
+		WebDriver driver = ((BaseTest) result.getInstance()).driver;
+
+		String screenshotPath = ScreenshotUtils.takeScreenshot(driver, result.getName());
+
+		test.get()
+		.fail("Test Failed")
+		.addScreenCaptureFromPath(new File(screenshotPath).getAbsolutePath());
 	}
 
 	@Override

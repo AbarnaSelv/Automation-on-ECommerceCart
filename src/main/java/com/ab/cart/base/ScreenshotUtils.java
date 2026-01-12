@@ -24,7 +24,7 @@ public class ScreenshotUtils {
 			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			File destFile = new File(fullPath);
 
-			destFile.getParentFile().mkdirs();
+			destFile.getParentFile().mkdirs(); // .mkdirs() => make directories
 
 			FileUtils.copyFile(src, destFile);
 			System.out.println("Screenshot saved at: " + destFile.getAbsolutePath());

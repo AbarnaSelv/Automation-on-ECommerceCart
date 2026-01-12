@@ -22,7 +22,7 @@ public class DriverFactory {
 			throw new IllegalArgumentException("Browser not supported: " + browser);
 		}
 
-		driver.manage().window().maximize();
+		getDriver().manage().window().maximize();
 		return driver;
 	}
 

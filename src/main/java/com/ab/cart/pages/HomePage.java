@@ -27,9 +27,10 @@ public class HomePage extends BasePage {
 	@FindBy(id="product_attribute_75_5_31_96")
 	private WebElement processor;
 	
-	@FindBy(xpath = "//div[@class='bar-notification success']//p")
+	@FindBy(xpath = "//div[@class='bar-notification success']/p")
 	private WebElement confirmation;
 
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
 	public void searchProduct( ) {
 		 search.clear();
@@ -40,7 +41,7 @@ public class HomePage extends BasePage {
 	 public void selectProduct(String productName) {
 		 search.sendKeys(productName);
 		 
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		 wait.until(ExpectedConditions.visibilityOf(product));
 		 
 		 product.click();
@@ -53,7 +54,7 @@ public class HomePage extends BasePage {
 	 }
 	 
 	 public void check() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		wait.until(ExpectedConditions.visibilityOf(confirmation));
 		System.out.println(confirmation.getText()); 
 	 }

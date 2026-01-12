@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.ab.cart.base.TestListener"/>
   </listeners>
-  <test thread-count="5" name="ECommerceTests(failed)">
+  <test thread-count="5" name="EcommerceTests(failed)">
     <classes>
       <class name="com.ab.cart.tests.CheckoutTest">
         <methods>
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- com.ab.cart.tests.CheckoutTest -->
     </classes>
-  </test> <!-- ECommerceTests(failed) -->
+  </test> <!-- EcommerceTests(failed) -->
 </suite> <!-- Failed suite [ECommerceCartAutomationSuite] -->

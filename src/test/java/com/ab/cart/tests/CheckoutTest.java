@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ab.cart.base.BaseTest;
@@ -14,7 +15,9 @@ import com.ab.cart.pages.CheckoutPage;
 import com.ab.cart.pages.HomePage;
 import com.ab.cart.pages.LoginPage;
 
+//@Listeners(com.ab.cart.base.TestListener.class)
 public class CheckoutTest extends BaseTest {
+
 
 	@Test
 	public void CheckoutActions() {
